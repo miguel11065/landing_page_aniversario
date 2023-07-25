@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniversártio</title>
+    <title>Aniversário</title>
+
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>poihgf</h1>
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Minha festa de aniversário <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Grace Field House
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        11/08/2023 às 18hrs
+                    </li>
+                </ul>
+                <a href="#" id="button" class="button button--primary"></a>
+            </div>
+        </div>
+    </header>
+    <section class="festa__title festa__title--title">
+        <div class="container">
+            <div class="festa__details">
+                <h1>Como será a festa</h1>
+            </div>
+        </div>
+    </section>
+    <section class="festa festa--salao">
+        <div class="container" data-aos="fade-left">
+            <div class="festa__details">
+                <h2 class="festa__details__title">Como será o salão</h2>
+                <p class="festa__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores dignissimos, fugit amet illum accusamus voluptatibus laudantium quis asperiores, voluptatem aperiam nam quasi, laboriosam aliquam tempore ipsum error exercitationem blanditiis!
+                </p>
+            </div>
+            <img class="festa__image" src="./imagens/salao.png" alt="salão de festa">
+        </div>
+    </section>
+    <section class="festa festa--pista festa--image-left">
+        <div class="container" data-aos="fade-right">
+            <div class="festa__details">
+                <h2 class="festa__details__title">Como será a pista de dança</h2>
+                <p class="festa__details__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam autem sit assumenda debitis voluptatum non dignissimos vitae, molestiae provident? Nemo excepturi delectus cumque vel praesentium fugiat et in suscipit cupiditate.
+                </p>
+            </div>
+            <img class="festa__image" src="./imagens/pista.png" alt="pista de dança">
+        </div>
+    </section>
+    <section class="festa festa--buffet">
+        <div class="container" data-aos="fade-left">
+            <div class="festa__details">
+                <h2 class="festa__details__title">Como será o buffet</h2>
+                <p class="festa__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero vel eos cum non exercitationem possimus asperiores iure nostrum. Tempora quidem dolorem assumenda doloribus vero. Asperiores, voluptatem architecto! Repellat, veritatis necessitatibus?
+                </p>
+            </div>
+            <img class="festa__image" src="./imagens/buffet.png" alt="buffet">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
